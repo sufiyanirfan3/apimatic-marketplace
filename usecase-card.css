@@ -33,9 +33,8 @@
     color: #fff;
 }
 
-.solu_footer {}
 
-.footer_elements {
+.card_footer_elements {
     font-size: 12px;
 }
 
@@ -57,7 +56,11 @@
     color: #309df0;
 }
 
-.solution_cards_box .solution_card:hover .bookmark_icon {
+.solution_cards_box .solution_card:hover .bookmark_icon{
+    color: white
+}
+
+.solution_cards_box .solution_card:hover .card_footer_elements{
     color: white
 }
 
@@ -126,6 +129,10 @@
     transform: rotate(-36deg);
     left: -18rem;
     transition: 0.7s;
+}
+
+.cards-icon{
+    color:black;
 }
 
 .solution_cards_box .solution_card:hover .hover_color_bubble {

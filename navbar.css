@@ -757,8 +757,9 @@ nav .signup-btn {
 
 .solu_footer {}
 
-.footer_elements {
+.card_footer_elements {
     font-size: 12px;
+    padding-left: 3px;
 }
 
 .solution_cards_box .solution_card:before {
@@ -782,7 +783,9 @@ nav .signup-btn {
 .solution_cards_box .solution_card:hover .bookmark_icon {
     color: white
 }
-
+.solution_cards_box .solution_card:hover .card_footer_elements, .solution_cards_box .solution_card:hover .cards-icon{
+    color: white
+}
 .solution_cards_box .solution_card:hover .so_top_icon {
     width: 50px;
     height: 50px;
@@ -794,6 +797,11 @@ nav .signup-btn {
     width: 40px;
     height: 40px;
     object-fit: contain;
+}
+
+.card_footer{
+    position: absolute;
+    bottom: 15px;
 }
 
 .bookmark_icon {
@@ -852,6 +860,10 @@ nav .signup-btn {
 
 .solution_cards_box .solution_card:hover .hover_color_bubble {
     top: 0rem;
+}
+
+.cards-icon{
+    color:black;
 }
 
 .solution_cards_box .solution_card .so_top_icon {
