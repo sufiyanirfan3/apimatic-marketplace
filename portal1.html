@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- LINK FOR ION ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!--Slick Carousel Slider-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+
+<body>
+    <header>
+    <nav>
+
+
+        <div class="menu-icon">
+            <span>
+                <ion-icon name="menu"></ion-icon>
+            </span>
+            <!-- <span class="fas fa-bars"></span> -->
+        </div>
+        <a href="navbar.html" style="text-decoration: none;">
+            <div class="logo">
+
+                APIMatic Marketplace
+
+            </div>
+        </a>
+        <form action="#">
+            <input type="text" class="search-data" placeholder="Search for APIs ...">
+            <button>
+                <ion-icon name="search"></ion-icon>
+            </button>
+            <!-- <button type="submit" class="fas fa-search"></button> -->
+        </form>
+        <div class="nav-items">
+            <li>
+                <div class="darkmode">
+                    <input type="checkbox" class="darkmode-checkbox" id="chk" />
+                    <label class="darkmode-label" for="chk">
+                        <ion-icon class="sun" name="sunny"></ion-icon>
+                        <ion-icon class="moon" name="moon"></ion-icon>
+                        <ion-icon class="ball" name="ellipse"></ion-icon>
+                    </label>
+                </div>
+            </li>
+            <li><a href="#">Add API</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><button type="submit" class="login-btn">Login</button></li>
+            <li><button type="submit" class="signup-btn">Signup</button></li>
+        </div>
+        <div class="search-icon">
+            <ion-icon name="search"></ion-icon>
+            <!-- <span class="fas fa-search"></span> -->
+        </div>
+        <div class="cancel-icon">
+            <span>
+                <ion-icon name="close" id="close" class="close"></ion-icon>
+            </span>
+            <!-- <span class="fas fa-times"></span> -->
+        </div>
+
+    </nav>
+</header>
+
+<script type="text/javascript">
+    var script = document.createElement("script");
+    script.src="https://dxjs.apimatic.io/v7/static/js/portal.v7.js";
+    script.onload = function() {
+        APIMaticDevPortal.show(
+            {
+"container": "apimatic-widget",
+"portalStyle": "default",
+"codegenApiRoutes": {
+"docsgen": "/api/api-entities/kJUSTzYjenpTaDRGNX18iW2T-XkvGslTx-wnLP8W6m0kS44j68t0HrsT3QqczUJE/portal-artifacts/docs/generated-file?template={template}",
+"codegen": "/api/api-entities/kJUSTzYjenpTaDRGNX18iW2T-XkvGslTx-wnLP8W6m0kS44j68t0HrsT3QqczUJE/portal-artifacts/sdks/generated-file?template={template}",
+"transform": "/api/api-entities/kJUSTzYjenpTaDRGNX18iW2T-XkvGslTx-wnLP8W6m0kS44j68t0HrsT3QqczUJE/portal-artifacts/specs/generated-file?format={format}",
+"apiProxy": "https://proxy.apimatic.io/api/proxy"
+},
+"apiKey": "PkUYNyvjYA7DfFBwoKTjTBkFJLbwB5qIjA9kgN68neaMAcdUTRWCSidsigBl5bQWwnmGh1HNfeYtgAIBN5ssIQ**",
+"baseUrl": "https://www.apimatic.io",
+"enableExport": true,
+"renameHttpToRest": false,
+"enableConsoleCalls": true,
+"useProxyForConsoleCalls": true,
+"initialPlatform": "http_curl_v1",
+"languageSettings": {
+"http_curl_v1": {
+"disableSdkDownload": true
+},
+"cs_net_standard_lib": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+},
+"java_eclipse_jre_lib": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+},
+"php_generic_lib_v2": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+},
+"python_generic_lib": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+},
+"ruby_generic_lib": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+},
+"ts_generic_lib": {
+"disableSdkDownload": false,
+"sdkDownloadLink": ""
+}
+},
+"allowedExportFormats": [
+"postman10",
+"postman20",
+"openapi31json",
+"openapi31yaml",
+"openapi3json",
+"openapi3yaml",
+"swagger20",
+"swaggeryaml",
+"swagger10",
+"raml",
+"raml10",
+"apiblueprint",
+"wadl2009",
+"apimatic",
+"wsdl",
+"insomnia",
+"insomniayaml"
+],
+"themeOverrides": {
+"themeType": "cool",
+"palette": {
+"primaryColor": "#0c7ff2",
+"linkColor": "#00C7D4"
+},
+"fontSource": [
+"https://fonts.googleapis.com/css?family='Rubik'",
+"https://fonts.googleapis.com/css?family='SFMono-400'"
+],
+"cssStyles": {
+"headings": {
+"fontFamily": "'Rubik', sans-serif",
+"h1": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "27px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+},
+"h2": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "24px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+},
+"h3": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "21.36px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+},
+"h4": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "19px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+},
+"h5": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "16.68px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+},
+"h6": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "15px",
+"fontWeight": "500",
+"fontStyle": "normal",
+"lineHeight": "1.3"
+}
+},
+"body": {
+"fontFamily": "'Rubik', sans-serif",
+"text1": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "15px",
+"fontWeight": "400",
+"fontStyle": "normal",
+"lineHeight": "1.75"
+},
+"text2": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "13.33px",
+"fontWeight": "400",
+"fontStyle": "normal",
+"lineHeight": "1.75"
+},
+"text3": {
+"fontFamily": "'Rubik', sans-serif",
+"fontSize": "11.85px",
+"fontWeight": "400",
+"fontStyle": "normal",
+"lineHeight": "1.75"
+}
+},
+"code": {
+"fontFamily": "'SFMono-400', Consolas, 'Liberation Mono', Menlo, Courier",
+"blockCode": {
+"fontFamily": "'SFMono-400', Consolas, 'Liberation Mono', Menlo, Courier",
+"fontSize": "15px",
+"fontWeight": "400",
+"fontStyle": "normal",
+"lineHeight": "1.75"
+},
+"inlineCode": {
+"fontFamily": "'SFMono-400', Consolas, 'Liberation Mono', Menlo, Courier",
+"fontSize": "15px",
+"fontWeight": "400",
+"fontStyle": "normal",
+"lineHeight": "1.75"
+}
+}
+}
+}
+}
+        );
+    };
+    document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+<div id="apimatic-widget" style="height: 100%; width: 100%;">
+</div>
+
+
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = () => {
+        items.classList.add("active");
+        menuBtn.classList.add("hide");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = () => {
+        items.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        searchBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        form.classList.remove("active");
+        cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = () => {
+        form.classList.add("active");
+        searchBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+    }
+</script>
+
+</body>

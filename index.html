@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIMatic Marketplace</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- LINK FOR ION ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="mobile-check">
+            <div class="icon">APIMatic Marketplace</div>
+            <div class="darkmode">
+                <input type="checkbox" class="darkmode-checkbox" id="chk" />
+                <label class="darkmode-label" for="chk">
+                    <ion-icon class="sun" name="sunny"></ion-icon>
+                    <ion-icon class="moon" name="moon"></ion-icon>
+                    <ion-icon class="ball" name="ellipse"></ion-icon>
+                </label>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search for APIs">
+                <ion-icon class="search-icon" name="search"></ion-icon>
+            </div>
+            <ol>
+                <li><a href="">Add API</a></li>
+                <li><a href="">Docs</a></li>
+                <li><a href=""><button class="login-btn">Login</button></a></li>
+                <li><a href=""><button class="signup-btn">Signup for free</button></a></li>
+            </ol>
+            <label for="mobile-check" class="menu-bar">
+                <ion-icon name="menu" id="menu" class="menu"></ion-icon>
+                <!--filled-->
+                <ion-icon name="close" id="close" class="close"></ion-icon>
+                <!--filled-->
+            </label>
+        </nav>
+    </header>
+    <section class="banner-wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-6 order-lg-1 order-2">
+                    <h2>The ultimate <span><b>APIMatic</b></span> Marketplace containing catalog of thousands of APIs</h2>
+                    <p>Explore now to get access to the APIs. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Architecto ratione in impedit, excepturi quaerat voluptates repellat molestias perferendis
+                        atque,
+                        repudiandae neque fugiat iusto deleniti a repellendus ullam? Nostrum, expedita. Aliquam?
+                    </p>
+                    <a href=""></a><button class="banner-btn">Explore Now</button></a>
+                </div>
+                <div class="col-lg-6 mb-5 order-lg-2 order-1">
+                    <img src="hero-banner.png" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
