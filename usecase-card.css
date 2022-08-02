@@ -118,7 +118,8 @@
 
 .hover_color_bubble {
     position: absolute;
-    background: rgb(54 81 207 / 15%);
+    /* background: rgb(54 81 207 / 15%); */
+    background: red;
     width: 100rem;
     height: 100rem;
     left: 0;

@@ -747,7 +747,8 @@ nav .signup-btn {
 }
 
 .solution_cards_box .solution_card:hover::before {
-    background: rgb(85 108 214 / 10%);
+    background: rgba(50, 86, 248, 0.363);  
+    /* hello */
 }
 
 .solution_cards_box .solution_card:hover .solu_title h3,
@@ -802,6 +803,7 @@ nav .signup-btn {
 .card_footer{
     position: absolute;
     bottom: 15px;
+    width: 100%;
 }
 
 .bookmark_icon {
